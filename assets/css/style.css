@@ -111,9 +111,10 @@ div.bio p {
 
 footer {
 	background: #666666;
-	border-top: #4aaaa5 3px solid;
+	border-top: #4aaaa5 5px solid;
 	height: 60px;
 	position: relative;
+	
 }
 
 footer p {
