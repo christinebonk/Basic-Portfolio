@@ -7,6 +7,9 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 body {
 	background: url(../images/ignasi_pattern_s.png);
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 
 .wrapper {
@@ -25,9 +28,16 @@ p, a {
 	color: #777777;
 }
 
+a {
+	transition: color 0.3s;
+}
+
 a:hover {
 	color: #4aaaa5;
-	transition: color 0.3s ;
+}
+
+main {
+	flex: 1 0 auto;
 }
 
 /*Header Styles*/
@@ -91,6 +101,7 @@ h2 {
 	color: #4aaaa5;
 	border-bottom: #dddddd 3px solid;
 	padding-bottom: 25px;
+	margin-top: 5px;
 }
 
 /*About Me Section*/
@@ -100,7 +111,7 @@ h2 {
 }
 
 #about-me figure img {
-	width: 200px;
+	width: 150px;
 }
 
 div.bio p {
@@ -113,6 +124,12 @@ div.bio p {
 	width: calc(33.33% - 20px);
 	margin: 10px;
 	position: relative;
+	border: none;
+	transition: border 0.2s ease-in-out;
+}
+
+#portfolio figure:hover {
+	border: #666 5px solid;
 }
 
 #portfolio figcaption {
@@ -175,6 +192,7 @@ footer {
 	border-top: #4aaaa5 5px solid;
 	height: 60px;
 	position: relative;
+	flex-shrink: 0;
 
 }
 
