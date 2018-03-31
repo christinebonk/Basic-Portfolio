@@ -107,6 +107,37 @@ div.bio p {
 	line-height: 30px;
 }
 
+/*Portfolio Section*/
+
+#portfolio figure {
+	width: calc(33.33% - 20px);
+	margin: 10px;
+	position: relative;
+}
+
+#portfolio figcaption {
+	position: absolute;
+	bottom: 5%;
+	top: 70%;
+	right: 0;
+	left: 0;
+	background: #4aaaa5;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gallery  {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery img {
+	max-width: 100%;
+	display: block;
+}
+
 /*Footer*/
 
 footer {
@@ -114,7 +145,7 @@ footer {
 	border-top: #4aaaa5 5px solid;
 	height: 60px;
 	position: relative;
-	
+
 }
 
 footer p {
